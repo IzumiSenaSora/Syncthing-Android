@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/syncthing/syncthing-android-builder
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
@@ -29,12 +29,12 @@ jobs:
           java -version
           ./gradlew --no-daemon buildNative lint assembleDebug
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: syncthing-android-debug.apk
           path: app/build/outputs/apk/debug/app-debug.apk
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: reports-and-libs
           path: |
