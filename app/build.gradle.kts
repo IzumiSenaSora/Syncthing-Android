@@ -31,8 +31,8 @@ dependencies {
 android {
     val ndkVersionShared = rootProject.extra.get("ndkVersionShared")
     // Changes to these values need to be reflected in `../docker/Dockerfile`
-    compileSdk = 34
-    buildToolsVersion = "34.0.0"
+    compileSdk = 35
+    buildToolsVersion = "35.0.0"
     ndkVersion = "${ndkVersionShared}"
 
     buildFeatures {
@@ -43,7 +43,7 @@ android {
     defaultConfig {
         applicationId = "com.nutomic.syncthingandroid"
         minSdk = 21
-        targetSdk = 33
+        targetSdk = 35
         versionCode = 4396
         versionName = "1.29.0-rc.1"
         testApplicationId = "com.nutomic.syncthingandroid.test"
