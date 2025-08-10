@@ -44,8 +44,8 @@ android {
         applicationId = "com.unordinary.syncthingandroid"
         minSdk = 21
         targetSdk = 33
-        versionCode = 4408
-        versionName = "1.29.7"
+        versionCode = 4409
+        versionName = "1.30.0"
         testApplicationId = "com.unordinary.syncthingandroid.test"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
