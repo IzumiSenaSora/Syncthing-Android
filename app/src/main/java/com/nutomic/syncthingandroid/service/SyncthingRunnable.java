@@ -416,8 +416,6 @@ public class SyncthingRunnable implements Runnable {
             targetEnv.put("STGUIASSETS", externalFilesDir.getAbsolutePath() + "/gui");
         targetEnv.put("STMONITORED", "1");
         targetEnv.put("STNOUPGRADE", "1");
-        // Since Syncthing v2+: purge deletes from database after 1 year.
-        targetEnv.put("STDBDELETERETENTIONINTERVAL", "10920h");
         // Disable hash benchmark for faster startup.
         // https://github.com/syncthing/syncthing/issues/4348
         targetEnv.put("STHASHING", "minio");
